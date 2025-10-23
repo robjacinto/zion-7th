@@ -150,6 +150,7 @@
             if (entry.isIntersecting) {
                 // ELEMENT IS VISIBLE
                 if (targetId === 'section-top') {
+                    audio1.play().catch(e => console.log("Audio 1 playback failed:", e));
                     ; // Play music 1
                 } else if (targetId === 'section-bottom') {
                 }
